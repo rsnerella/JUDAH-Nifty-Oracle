@@ -248,7 +248,7 @@ def _build_features_impl():
     nifty["atr_ratio"] = nifty["atr10"] / nifty["atr20"].replace(0, np.nan)
 
     # Forward returns for empirical probability
-    for h in [1, 3, 5, 7, 14, 21, 30]:
+    for h in [1, 3, 5, 7, 14, 28]:
         nifty[f"fwd_{h}d"]  = nifty["close"].shift(-h) / nifty["close"] - 1
         nifty[f"fhi_{h}d"]  = nifty["high"].rolling(h).max().shift(-h) / nifty["close"] - 1
         nifty[f"flo_{h}d"]  = nifty["low"].rolling(h).min().shift(-h)  / nifty["close"] - 1

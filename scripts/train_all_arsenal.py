@@ -51,7 +51,6 @@ def main():
         ("Tail Risk", "engine.tail_risk_trainer", "train_all"),
         ("Max Drawdown", "engine.max_drawdown_trainer", "train_all"),
         ("Global Contagion", "engine.global_contagion_trainer", "train_all"), # Wait, global_contagion_trainer uses `train_contagion_models(df)` directly inside `__main__`
-        ("PCR Reversal", "engine.pcr_reversal_trainer", "train_all"),
         ("Theta Decay", "engine.theta_decay_trainer", "train_all"),
         ("Intraday Reversal", "engine.intraday_reversal_trainer", "train_all"),
         ("Expiry Vol", "engine.expiry_vol_trainer", "train_all"),
@@ -88,4 +87,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

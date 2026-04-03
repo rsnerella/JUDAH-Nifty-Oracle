@@ -26,9 +26,9 @@ from engine.core import build_features
 
 MODEL_DIR = os.path.join(ROOT_DIR, "data", "models", "monthly_breach")
 BREACH_THRESHOLD_PCT = 0.04 # 4%
-HORIZONS = [21, 30]
+HORIZONS = [28]
 
-def train_monthly_breach_models(df, horizon=21):
+def train_monthly_breach_models(df, horizon=28):
     if not os.path.exists(MODEL_DIR): os.makedirs(MODEL_DIR)
 
     available_features = [c for c in FEATURE_COLS if c in df.columns]

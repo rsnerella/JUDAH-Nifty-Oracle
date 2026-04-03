@@ -39,7 +39,7 @@ MODEL_DIR = os.path.join(ROOT_DIR, "data", "models", "breach")
 # We use percentage-based thresholds so it adapts to Nifty level
 BREACH_THRESHOLD_PCT = 0.025  # 2.5% = ~600 points at Nifty 24000
 
-HORIZONS = [3, 5, 7, 14, 21, 30]  # Days to expiry (21/30 added for monthly expiry coverage)
+HORIZONS = [3, 5, 7, 14, 28]  # Days to expiry
 
 
 def train_breach_models(df, horizon=7, threshold=BREACH_THRESHOLD_PCT):
