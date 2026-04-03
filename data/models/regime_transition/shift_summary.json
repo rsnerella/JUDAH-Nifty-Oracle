@@ -1,18 +1,18 @@
 {
-  "last_trained": "2026-04-03 10:57:45",
+  "last_trained": "2026-04-03 18:47:58",
   "horizons": {
     "3": {
-      "cv_accuracy": 0.6307692307692307,
+      "cv_accuracy": 0.6316483516483516,
       "shift_freq": 33.369963369963365,
       "n_samples": 2730
     },
     "5": {
-      "cv_accuracy": 0.5723076923076923,
+      "cv_accuracy": 0.5512087912087912,
       "shift_freq": 42.637362637362635,
       "n_samples": 2730
     },
     "7": {
-      "cv_accuracy": 0.549010989010989,
+      "cv_accuracy": 0.5415384615384615,
       "shift_freq": 48.68131868131868,
       "n_samples": 2730
     }
