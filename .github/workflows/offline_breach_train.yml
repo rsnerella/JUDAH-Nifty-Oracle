@@ -1,0 +1,45 @@
+name: Breach Super Grid Parameter Discovery
+
+on:
+  schedule:
+    # First day of every month at 00:00 UTC (Massive 20-hour run once a month)
+    - cron: '0 0 1 * *'
+  workflow_dispatch:   # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  train-models:
+    runs-on: ubuntu-latest
+    timeout-minutes: 720
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Massive Parameter Discovery (Master Chef)
+        run: python scripts/offline_breach_grid_trainer.py
+        env:
+          PYTHONUNBUFFERED: '1'
+          # Uncomment below to artificially limit combos and finish fast (for debugging)
+          # MAX_GRID_COMBOS: '50'
+
+      - name: Commit and push parameter JSON recipes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/models/breach/breach_optimal_params.json
+          git commit -m "🤖 Breach Master Chef: Monthly Recipes updated [$(date -u +%Y-%m-%dT%H:%M:%SZ)]" || echo "No changes to commit"
+          git fetch origin main
+          git rebase --strategy-option=ours origin/main || { git rebase --abort && git merge -X ours origin/main; }
+          git push

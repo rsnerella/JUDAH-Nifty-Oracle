@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+.idea/
+.vscode/
+data/walkforward_backtest_*.csv
+tmp_*
+scripts/tmp_*
+engine/__pycache__/
+modules/__pycache__/
+data/walk_forward_*.csv
+*.log

@@ -1,0 +1,50 @@
+name: Breach Radar Training
+
+on:
+  schedule:
+    # Every Sunday at 02:00 UTC (after grid trainer finishes at 00:00)
+    - cron: '0 2 * * 0'
+  workflow_dispatch:   # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  train-breach-models:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Train Breach Radar models
+        run: python -m engine.breach_trainer
+        env:
+          PYTHONUNBUFFERED: '1'
+          PYTHONIOENCODING: 'utf-8'
+
+      - name: Run Breach Backtest
+        run: python scripts/backtest_breach.py
+        env:
+          PYTHONUNBUFFERED: '1'
+          PYTHONIOENCODING: 'utf-8'
+
+      - name: Commit and push breach models
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/models/breach/
+          git commit -m "🛡️ Breach Radar: Auto-retrained models [$(date -u +%Y-%m-%dT%H:%M:%SZ)]" || echo "No changes to commit"
+          git fetch origin main
+          git rebase --strategy-option=ours origin/main || { git rebase --abort && git merge -X ours origin/main; }
+          git push
