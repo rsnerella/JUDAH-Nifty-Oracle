@@ -1,17 +1,17 @@
 {
-  "last_trained": "2026-05-17 06:35:32",
+  "last_trained": "2026-05-24 06:51:00",
   "threshold_pct": 4.0,
   "horizons": {
     "28": {
       "PUT": {
-        "cv_accuracy": 0.4997821350762527,
-        "safe_pct": 66.56997824510515,
-        "n_samples": 2758
+        "cv_accuracy": 0.5256521739130434,
+        "safe_pct": 66.6304741223308,
+        "n_samples": 2763
       },
       "CALL": {
-        "cv_accuracy": 0.5032679738562091,
-        "safe_pct": 55.910079767947785,
-        "n_samples": 2758
+        "cv_accuracy": 0.48521739130434777,
+        "safe_pct": 56.9308722403185,
+        "n_samples": 2763
       }
     }
   }

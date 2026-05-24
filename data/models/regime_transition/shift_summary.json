@@ -1,20 +1,20 @@
 {
-  "last_trained": "2026-05-17 06:35:43",
+  "last_trained": "2026-05-24 06:51:11",
   "horizons": {
     "3": {
-      "cv_accuracy": 0.6387799564270151,
-      "shift_freq": 33.43002175489485,
-      "n_samples": 2758
+      "cv_accuracy": 0.6339130434782609,
+      "shift_freq": 33.478103510676796,
+      "n_samples": 2763
     },
     "5": {
-      "cv_accuracy": 0.5350762527233115,
-      "shift_freq": 42.67585206671501,
-      "n_samples": 2758
+      "cv_accuracy": 0.5421739130434784,
+      "shift_freq": 42.671009771986974,
+      "n_samples": 2763
     },
     "7": {
-      "cv_accuracy": 0.5350762527233116,
-      "shift_freq": 48.80348078317622,
-      "n_samples": 2758
+      "cv_accuracy": 0.5460869565217392,
+      "shift_freq": 48.78754976474846,
+      "n_samples": 2763
     }
   }
 }
