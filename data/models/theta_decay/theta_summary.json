@@ -1,8 +1,8 @@
 {
-  "last_trained": "2026-06-14 08:02:32",
+  "last_trained": "2026-06-21 08:16:39",
   "metrics": {
-    "cv_accuracy": 0.625974025974026,
-    "theta_freq": 62.189413035649984,
-    "n_samples": 2777
+    "cv_accuracy": 0.6254859611231101,
+    "theta_freq": 61.861969805895036,
+    "n_samples": 2782
   }
 }

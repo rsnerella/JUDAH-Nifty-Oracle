@@ -1,32 +1,32 @@
 {
-  "last_trained": "2026-06-14 08:00:29",
+  "last_trained": "2026-06-21 08:14:23",
   "horizons": {
     "3": {
-      "cv_accuracy": 0.5948051948051949,
-      "val_accuracy": 0.6498800959232613,
-      "crush_pct": 41.2675549153763,
-      "n_samples": 2777,
+      "cv_accuracy": 0.5969762419006479,
+      "val_accuracy": 0.6244019138755981,
+      "crush_pct": 41.40905823148814,
+      "n_samples": 2782,
       "model_path": "/home/runner/work/JUDAH-Nifty-Oracle/JUDAH-Nifty-Oracle/data/models/vol_crush/xgb_vol_crush_3d.pkl"
     },
     "5": {
-      "cv_accuracy": 0.638961038961039,
-      "val_accuracy": 0.7290167865707434,
-      "crush_pct": 34.60568959308606,
-      "n_samples": 2777,
+      "cv_accuracy": 0.6414686825053997,
+      "val_accuracy": 0.7129186602870813,
+      "crush_pct": 34.75916606757728,
+      "n_samples": 2782,
       "model_path": "/home/runner/work/JUDAH-Nifty-Oracle/JUDAH-Nifty-Oracle/data/models/vol_crush/xgb_vol_crush_5d.pkl"
     },
     "7": {
-      "cv_accuracy": 0.6753246753246753,
-      "val_accuracy": 0.7146282973621103,
-      "crush_pct": 31.32877205617573,
-      "n_samples": 2777,
+      "cv_accuracy": 0.6825053995680346,
+      "val_accuracy": 0.7368421052631579,
+      "crush_pct": 31.02084831056794,
+      "n_samples": 2782,
       "model_path": "/home/runner/work/JUDAH-Nifty-Oracle/JUDAH-Nifty-Oracle/data/models/vol_crush/xgb_vol_crush_7d.pkl"
     },
     "14": {
-      "cv_accuracy": 0.7753246753246754,
-      "val_accuracy": 0.7889688249400479,
-      "crush_pct": 22.75837234425639,
-      "n_samples": 2777,
+      "cv_accuracy": 0.7740820734341252,
+      "val_accuracy": 0.7942583732057417,
+      "crush_pct": 22.71746944644141,
+      "n_samples": 2782,
       "model_path": "/home/runner/work/JUDAH-Nifty-Oracle/JUDAH-Nifty-Oracle/data/models/vol_crush/xgb_vol_crush_14d.pkl"
     }
   }
