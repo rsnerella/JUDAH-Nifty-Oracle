@@ -1,5 +1,5 @@
 {
-  "train_end_date": "2026-08-21",
+  "train_end_date": "2026-08-28",
   "features": [
     "rsi",
     "z20",
@@ -186,28 +186,28 @@
     "intraday_trend"
   ],
   "feature_hash": "fcbb0e476508b1b29ae1a2161f021d920c8eafc2ad4012cfc779930d77539774",
-  "pos_rate": 0.5552016985138004,
-  "scale_pos_weight": 0.8011472275334608,
+  "pos_rate": 0.5545743553514659,
+  "scale_pos_weight": 0.8031847133757961,
   "params": {
     "n_estimators": 100,
     "max_depth": 7,
-    "learning_rate": 0.05,
-    "subsample": 0.6,
-    "colsample_bytree": 1.0,
+    "learning_rate": 0.03,
+    "subsample": 1.0,
+    "colsample_bytree": 0.7,
     "reg_alpha": 0,
     "reg_lambda": 3.0
   },
-  "cv_avg_logloss": 0.7643758058547974,
-  "cv_avg_accuracy": 0.9913793103448276,
+  "cv_avg_logloss": 0.7644343674182892,
+  "cv_avg_accuracy": 0.985632183908046,
   "holdout": {
-    "n": 109,
-    "accuracy": 0.9908256880733946,
-    "logloss": 0.18275201320648193,
-    "auc": 1.0,
+    "n": 114,
+    "accuracy": 0.9736842105263158,
+    "logloss": 0.26374080777168274,
+    "auc": 0.992739898989899,
     "precision_recall": [
-      0.9791666666666666,
-      1.0
+      0.9591836734693877,
+      0.9791666666666666
     ]
   },
-  "created_at": "2026-08-23T03:02:00.755199Z"
+  "created_at": "2026-08-30T05:21:05.373998Z"
 }
