@@ -1,5 +1,5 @@
 {
-  "train_end_date": "2026-10-01",
+  "train_end_date": "2026-10-09",
   "features": [
     "rsi",
     "z20",
@@ -186,8 +186,8 @@
     "intraday_trend"
   ],
   "feature_hash": "fcbb0e476508b1b29ae1a2161f021d920c8eafc2ad4012cfc779930d77539774",
-  "pos_rate": 0.39628591450595657,
-  "scale_pos_weight": 1.5234305923961096,
+  "pos_rate": 0.3955928646379853,
+  "scale_pos_weight": 1.5278514588859415,
   "params": {
     "n_estimators": 100,
     "max_depth": 7,
@@ -197,17 +197,17 @@
     "reg_alpha": 0.5,
     "reg_lambda": 3.0
   },
-  "cv_avg_logloss": 0.6699373126029968,
-  "cv_avg_accuracy": 0.9913793103448276,
+  "cv_avg_logloss": 0.6722374260425568,
+  "cv_avg_accuracy": 0.9942528735632183,
   "holdout": {
     "n": 124,
     "accuracy": 1.0,
-    "logloss": 0.1929970532655716,
+    "logloss": 0.18945984542369843,
     "auc": 1.0,
     "precision_recall": [
       1.0,
       1.0
     ]
   },
-  "created_at": "2026-10-04T05:14:56.005721Z"
+  "created_at": "2026-10-11T05:06:48.923752Z"
 }
