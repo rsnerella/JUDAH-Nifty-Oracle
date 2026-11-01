@@ -1,12 +1,12 @@
 {
-  "last_trained": "2026-11-01 08:23:38",
+  "last_trained": "2026-11-01 10:47:35",
   "threshold_pct": 2.5,
   "threshold_desc": "\u00b12.5% (~600 pts at Nifty 24000)",
   "horizons": {
     "3": {
       "PUT": {
-        "cv_accuracy": 0.792468619246862,
-        "cv_logloss": 0.510882306098938,
+        "cv_accuracy": 0.7899581589958159,
+        "cv_logloss": 0.512501060962677,
         "val_accuracy": 0.8236658932714617,
         "val_logloss": 0.46037316421522184,
         "safe_pct": 83.50156630699617,
@@ -64,10 +64,10 @@
         "model_path": "/home/runner/work/JUDAH-Nifty-Oracle/JUDAH-Nifty-Oracle/data/models/breach/xgb_breach_put_7d.pkl"
       },
       "CALL": {
-        "cv_accuracy": 0.5661087866108787,
-        "cv_logloss": 0.6766336560249329,
-        "val_accuracy": 0.691415313225058,
-        "val_logloss": 0.6095507808559671,
+        "cv_accuracy": 0.5820083682008368,
+        "cv_logloss": 0.6711362481117249,
+        "val_accuracy": 0.6960556844547564,
+        "val_logloss": 0.5983153159717403,
         "safe_pct": 64.0097459101984,
         "breach_pct": 35.990254089801596,
         "n_samples": 2873,
@@ -88,10 +88,10 @@
         "model_path": "/home/runner/work/JUDAH-Nifty-Oracle/JUDAH-Nifty-Oracle/data/models/breach/xgb_breach_put_14d.pkl"
       },
       "CALL": {
-        "cv_accuracy": 0.5242677824267782,
-        "cv_logloss": 0.6952082276344299,
-        "val_accuracy": 0.5661252900232019,
-        "val_logloss": 0.6782207505974118,
+        "cv_accuracy": 0.5397489539748953,
+        "cv_logloss": 0.6956949591636657,
+        "val_accuracy": 0.5498839907192575,
+        "val_logloss": 0.6693110623566282,
         "safe_pct": 42.98642533936652,
         "breach_pct": 57.01357466063348,
         "n_samples": 2873,
@@ -101,10 +101,10 @@
     },
     "28": {
       "PUT": {
-        "cv_accuracy": 0.46987447698744766,
-        "cv_logloss": 0.695089066028595,
-        "val_accuracy": 0.7122969837587007,
-        "val_logloss": 0.5776270718600567,
+        "cv_accuracy": 0.4765690376569037,
+        "cv_logloss": 0.6951647877693177,
+        "val_accuracy": 0.7308584686774942,
+        "val_logloss": 0.5639550181042158,
         "safe_pct": 41.73337974242951,
         "breach_pct": 58.26662025757048,
         "n_samples": 2873,
@@ -112,10 +112,10 @@
         "model_path": "/home/runner/work/JUDAH-Nifty-Oracle/JUDAH-Nifty-Oracle/data/models/breach/xgb_breach_put_28d.pkl"
       },
       "CALL": {
-        "cv_accuracy": 0.6857740585774058,
-        "cv_logloss": 0.6303253293037414,
-        "val_accuracy": 0.6264501160092807,
-        "val_logloss": 0.6520317452012446,
+        "cv_accuracy": 0.694979079497908,
+        "cv_logloss": 0.625582504272461,
+        "val_accuracy": 0.617169373549884,
+        "val_logloss": 0.6610418621655523,
         "safe_pct": 29.585798816568047,
         "breach_pct": 70.41420118343196,
         "n_samples": 2873,
